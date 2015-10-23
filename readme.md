@@ -2,6 +2,8 @@
 
 Simple implementation of a job logger that will allow you to log messages directly from your background job to the hangfire console. 
 
+!["Hangfire job logging"](http://ibin.co/2K3KoCcd1S8G)
+
 ##### Status
 Requires a small patch to hangfire, currently unmerged: https://github.com/HangfireIO/Hangfire/pull/466
 This is however, a very tiny change which should allow you to make use of it before (if) it gets accepted.
