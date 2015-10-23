@@ -1,0 +1,16 @@
+App_Data/
+bin/
+obj/
+
+
+# Files
+#######################
+*.suo
+*.lnk
+*.user
+*.swp
+*~
+*.log
+*.vssscc
+*.vspscc
+*.orig
