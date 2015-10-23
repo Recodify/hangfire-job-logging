@@ -1,0 +1,4 @@
+C:\code\forks\hangfire.job.logging\hangfire.job.logging\bin\Debug\hangfire.job.logging.dll
+C:\code\forks\hangfire.job.logging\hangfire.job.logging\bin\Debug\hangfire.job.logging.pdb
+C:\code\forks\hangfire.job.logging\hangfire.job.logging\obj\Debug\hangfire.job.logging.dll
+C:\code\forks\hangfire.job.logging\hangfire.job.logging\obj\Debug\hangfire.job.logging.pdb
