@@ -3,23 +3,15 @@ using System.Data.SqlClient;
 
 namespace hangfire.job.logging
 {
-    /// <summary>
-    /// Simple sql server IJobLogger implementation that will log to the hangfire.state table.
-    /// </summary>
-    public class SqlServerJobLogger : IJobLogger
+    public class JobLogger : IJobLogger
     {
         private readonly string connectionString;
 
-        public SqlServerJobLogger(string connectionString)
+        public JobLogger(string connectionString)
         {
             this.connectionString = connectionString;
         }
 
-        /// <summary>
-        /// Write a message to the job log.
-        /// </summary>
-        /// <param name="jobId">The id of the job that is logging a message.</param>
-        /// <param name="message">The message to log.</param>
         public void Write(string jobId, string message)
         {
             var command = BuildCommand(jobId, message);
