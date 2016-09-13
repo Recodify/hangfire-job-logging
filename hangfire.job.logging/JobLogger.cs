@@ -19,6 +19,20 @@ namespace hangfire.job.logging
             ExecuteCommand(command);
         }
 
+        public void Write(string message)
+        {
+            var jobId = JobContext.JobId;
+
+            if (string.IsNullOrEmpty(jobId))
+            {
+                return;
+            }
+
+            var command = BuildCommand(jobId, message);
+
+            ExecuteCommand(command);
+        }
+
         private void ExecuteCommand(SqlCommand command)
         {
             using (var connection = new SqlConnection(connectionString))
