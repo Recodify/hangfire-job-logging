@@ -2,6 +2,13 @@ App_Data/
 bin/
 obj/
 
+# NuGet Packages
+*.nupkg
+# The packages folddder can be ignored because of Package Restore
+**/packages/*
+packages/
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
 
 # Files
 #######################
